@@ -19,7 +19,7 @@ public class TrailingZeroInFactorialOptimzed {
 		int res=0;
 		for(int i=5;i<= num;i=i*5) {
 			
-			res = res + num/5;
+			res = res + num/i;
 		}
 		System.out.println("trailing zero are : "+res);
 	}
