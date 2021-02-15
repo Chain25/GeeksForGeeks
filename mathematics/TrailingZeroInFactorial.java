@@ -15,9 +15,9 @@ public class TrailingZeroInFactorial {
 
 	private static void trailingZero(int val) {
 		// TODO Auto-generated method stub
-		int result =1;
-		for(int i = val ;i<1;i++) {
-			result *= val;
+		float result =1;
+		for(int i = val ;i>1;i--) {
+			result =result* i;
 		}
 		System.out.println("Factorial of number "+ val + " = "+result);
 		int count =0;
