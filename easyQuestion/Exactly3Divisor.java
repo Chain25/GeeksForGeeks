@@ -10,7 +10,21 @@ public class Exactly3Divisor {
 		System.out.println("Enter  number");
 		int x = scanner.nextInt();
 		
-		System.out.println("count ="+exactly3Divisor(x));
+//		System.out.println("count ="+exactly3Divisor(x));
+		
+		String str = new String();
+		str= "java is strong";
+		String abc = new String();
+		abc = "java is strong";
+		boolean value = str == abc;
+		System.out.println(value);
+		String fresh = "Feast is hosted";
+		
+		if(str == fresh)
+			System.out.println("both are equal");
+		else System.out.println("Not equal");
+		
+		
 	}
 	// this function also print the perfect square less than equal to x
 	/* here we r going to find count of number which are 
@@ -22,28 +36,28 @@ public class Exactly3Divisor {
 	 * so we are going to find count of those no.
 	 * 
 	 */
-	private static int exactly3Divisor(int x) {
-		// TODO Auto-generated method stub
-		int count =0;
-		int n = (int)Math.sqrt(x);
-		System.out.println("Perfect squares :");
-		for(int i=1;i<=n;i++) {
-			if(isPrime(i)) {
-				count++;
-				System.out.println(i*i);
-			}
-		}
-		return count;
-	}
-	private static boolean isPrime(int j) {
-		// TODO Auto-generated method stub
-		if(j==1) return false;
-		for(int i=2;i*i<=j;i++) {
-			if(j%i==0) {
-				return false;
-			}
-		}
-		return true;
-	}
+//	private static int exactly3Divisor(int x) {
+//		// TODO Auto-generated method stub
+//		int count =0;
+//		int n = (int)Math.sqrt(x);
+//		System.out.println("Perfect squares :");
+//		for(int i=1;i<=n;i++) {
+//			if(isPrime(i)) {
+//				count++;
+//				System.out.println(i*i);
+//			}
+//		}
+//		return count;
+//	}
+//	private static boolean isPrime(int j) {
+//		// TODO Auto-generated method stub
+//		if(j==1) return false;
+//		for(int i=2;i*i<=j;i++) {
+//			if(j%i==0) {
+//				return false;
+//			}
+//		}
+//		return true;
+//	}
 
 }
